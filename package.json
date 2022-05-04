@@ -1,0 +1,18 @@
+{
+  "name": "express-hello",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "tap test"
+  },
+  "dependencies": {
+    "express": "^3.21.2",
+    "request": "^2.88.2",
+    "tap-spec": "^5.0.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "tap": "^16.1.0"
+  }
+}
