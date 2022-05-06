@@ -1,0 +1,5 @@
+{
+  "start": "node server.js",
+  "test": "tap test",
+  "e2e": "tap e2e"
+}

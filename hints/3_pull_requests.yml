@@ -1,0 +1,6 @@
+pull_request:
+  branches:
+    - '**'
+
+deploy-staging:
+  if: github.event_name != 'pull_request'

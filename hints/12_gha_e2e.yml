@@ -1,0 +1,11 @@
+e2e-test:
+  if: github.event_name != 'pull_request'
+  name: End2end Test
+  runs-on: ubuntu-latest
+  needs: [ deploy-staging ]
+  steps:
+    - uses: actions/checkout@v3
+    - name: install tap
+      run:  npm install tap --save-dev
+    - name: Run e2e tests
+      run: npm run e2e
