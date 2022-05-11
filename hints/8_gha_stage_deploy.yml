@@ -1,4 +1,5 @@
 deploy-staging:
+    if: github.event_name != 'pull_request'
     name: Deploy to Staging
     runs-on: ubuntu-latest
     needs: [ test ]
@@ -9,3 +10,6 @@ deploy-staging:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: growuphack-0
           heroku_email: growuphack2022+0@gmail.com
+
+
+
