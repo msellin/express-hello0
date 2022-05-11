@@ -7,9 +7,18 @@ Please prepare before the workshop:
 - https://github.com/signup
 - https://signup.heroku.com/
 
+# Install and configure git (if you dont have it already)
+- https://git-scm.com/downloads
+- git config --global user.name "github_username"
+- git config --global user.email "email_address"
+
 # Fork this project:
 
 - https://github.com/GrowUpHack/express-hello0/fork
+
+# Clone the project
+
+git clone <your repository url>
 
 # Install nodeJs
 
