@@ -18,7 +18,7 @@ Please prepare before the workshop:
 
 # Clone the project
 
-git clone <your repository url>
+git clone your_repository_url
 
 # Install nodeJs
 
