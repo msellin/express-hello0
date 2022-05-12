@@ -24,12 +24,24 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      ### configure cache
+      - name: Cache node modules
+        id: cache-nodemodules
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules-${{ env.node-version }}
+        with:
+          # caching node_modules
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ env.node-version }}
           cache: 'npm'
 
       - name: Install dependencies
+        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
         run: npm ci --ignore-scripts
 
       - name: Run tests
