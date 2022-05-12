@@ -2,7 +2,7 @@ import express from "express";
 import {WeatherService, HtmlService} from "./service.js";
 
 
-const app = express.createServer(), weatherService = new WeatherService(), htmlService = new HtmlService();
+const app = express(), weatherService = new WeatherService(), htmlService = new HtmlService();
 
 app.get('/ping', (req, res) => {
     res.send('pong')
