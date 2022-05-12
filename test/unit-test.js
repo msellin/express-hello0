@@ -3,6 +3,7 @@ import tap from "tap";
 import nock from "nock";
 import {HtmlService, WeatherService} from "../service.js";
 
+tap.jobs = 2
 
 tap.test('get temperature', (t) => {
     t.plan(1);
