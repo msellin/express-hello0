@@ -13,7 +13,7 @@
   },
   "type": "module",
   "devDependencies": {
-    "nock": "^13.2.4",
+    "nock": "^13.2.6",
     "tap": "^16.2.0"
   }
 }
