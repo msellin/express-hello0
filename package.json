@@ -14,6 +14,6 @@
   "type": "module",
   "devDependencies": {
     "nock": "^13.2.4",
-    "tap": "^16.2.0"
+    "tap": "^16.3.4"
   }
 }
